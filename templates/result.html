@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>Result — Thesis Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>نتیجه</h1>
+    <p>تعداد چانک‌ها: {{ chunks }} — اندازهٔ هر چانک: {{ chunk_size }}</p>
+    <h2>متن نهایی</h2>
+    <pre>{{ content }}</pre>
+    {% if bibliography %}
+    <h2>کتابنامه (از BibTeX)</h2>
+    <pre>{{ bibliography }}</pre>
+    {% endif %}
+  </div>
+</body>
+</html>

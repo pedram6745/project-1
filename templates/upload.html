@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload — Thesis Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1>آپلود سند</h1>
+    <p>فایل DOCX اصلی و در صورت تمایل فایل BibTeX را بارگذاری کنید.</p>
+    <form method="post" action="/process" enctype="multipart/form-data">
+      <label>DOCX</label>
+      <input type="file" name="file" accept=".docx" required />
+      <label>BibTeX (اختیاری)</label>
+      <input type="file" name="bibfile" accept=".bib" />
+      <button type="submit">پردازش</button>
+    </form>
+  </div>
+</body>
+</html>
